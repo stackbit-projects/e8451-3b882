@@ -1,0 +1,80 @@
+source: src
+title: سیمرغ
+description: >-
+  یک تم فارسی برای Jekyll.  کد سیمرغ در <a
+  href="https://github.com/mhdzli/simorq" target="_blank"
+  rel="noopener">گیت‌هاب</a>.
+lang: fa
+timezone: Asia/Tehran
+image: assets/img/ogp.png
+repo: 'https://github.com/mhdzli/simorgh'
+mode: dark
+author:
+  name: اسم شما
+  bio: >-
+    یک تم Jekyll برای وبلاگ فارسی. اگر تم روشن را بیشتر می‌پسندید، روی خورشید
+    بالای صفحه سمت راست کلیک کنید.
+
+    لینک این پروژه در <a href="https://github.com/mhdzli/simorq" target="_blank"
+    rel="noopener">گیت‌هاب</a>.
+  username: your_username
+  github: your_github_username
+  twitter: your_twitter_username
+  lbry: 'https://your_instance.address/@your_username'
+  pixelfed: 'https://your_instance.address/your_username'
+  mastodon:
+    first: 'https://your_instance.address/@your_username'
+    second: null
+  email: your@email.address
+  avatar: /assets/img/avatar.jpg
+url: ''
+baseurl: ''
+permalink: '/:title/'
+google_analytics: null
+fb_appid: null
+collections:
+  posts:
+    output: true
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: post
+      comments: false
+jekyll_compose:
+  post_default_front_matter:
+    modified: null
+    tags: []
+    description: null
+  draft_default_front_matter:
+    modified: null
+    tags: []
+    description: null
+number_of_posts: 5
+sass:
+  style: compressed
+include:
+  - _redirects
+  - .htaccess
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
+  - jekyll-jalali
